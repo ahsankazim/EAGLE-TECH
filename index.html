@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-commerce design</title>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css\responsib.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="top-nev-ber">
+  <div class="search-box">
+    <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+    <i class="fa fa-times"id="close-btn" onclick="closemenu()"></i>
+ <img src="images\logo.png"class="logo">
+   <input type="text" class="form-control">
+   <span class="inpur-group-text"><i class="fa fa-search" aria-hidden="true"></i></span>
+  </div>
+<div class="menu-bar">
+  <ul>
+    <li><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true">Cart</i></a></li>
+      <li><a href="#">Sign-up</a></li>
+        <li><a href="#">Log-in</a></li>
+  </ul>
+</div>
+</div>
+<!--top-ber-design complete-->
+<section class="header">
+  <div class="side-menu" id="side-menu">
+    <ul>
+      <li>On sale <i class="fa fa-angle-right"></i>
+      <ul>
+          <li>Sub Menu-1</li>
+          <li>Sub Menu-1</li>
+          <li>Sub Menu-1</li>
+          <li>Sub Menu-1</li>
+      </ul>
+      </li>
+      <li>Mobile<i class="fa fa-angle-right" ></i>
+        <ul>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+            <li>Sub Menu-2</li>
+        </ul>
+      </li>
+      <li>Computer <i class="fa fa-angle-right"></i>
+        <ul>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+            <li>Sub Menu-3</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!--SUB DROPDOWN VAR END-->
+  <div class="slider">
+    <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="images\slider-01.jpg" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src="images\slider-04.jpg" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src="images\slider-03.jpg" class="d-block w-100" alt="...">
+  </div>
+  <div class="carousel-item">
+    <img src="images\slider-02.jpg" class="d-block w-100" alt="...">
+  </div>
+</div>
+  <ol class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1"></li>
+    <li data-target="#slider" data-slide-to="2"></li>
+    <li data-target="#slider" data-slide-to="3"></li>
+    <li data-target="#slider" data-slide-to="4"></li>
+  </ol>
+</div>
+  </div>
+  <!--slider design end-->
+</section>
+
+<script>
+  function openmenu()
+  {
+  document.getElementById("side-menu").style.display="block";
+  document.getElementById("menu-btn").style.display="none";
+  document.getElementById("close-btn").style.display="block";
+  }
+  function closemenu()
+  {
+  document.getElementById("side-menu").style.display="none";
+  document.getElementById("menu-btn").style.display="block";
+  document.getElementById("close-btn").style.display="none";
+  }
+</script>
+<!--TOP NEV-BER DESIGN ENDED-->
+<section class="futuers-categories">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="images\tem-1.jpg" alt="">
+      </div>
+      <div class="col-md-3">
+        <img src="images\tem-2.jpg" alt="">
+      </div>
+      <div class="col-md-3">
+        <img src="images\tem-3.jpg" alt="">
+      </div>
+      <div class="col-md-3">
+        <img src="images\tem-4.jpg" alt="">
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--futuers-categories area ends-->
+<section class="on-sale">
+  <div class="container">
+    <div class="title-box">
+    <h2>One-sale</h2>
+    </div>
+   <div class="row">
+     <div class="col-md-3">
+       <div class="product-top">
+         <img src="images\fit-watch.jpg" alt="">
+         <div class="overlay-right">
+          <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+          <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+          <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+         </div>
+  </div>
+  <div class="product-button text-center">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star-half-o"></i>
+    <h3>Fitness Watch</h3>
+    <h5>$40.00</h5>
+  </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <div class="product-top">
+      <img src="images\fit-watch2.jpg" alt="">
+      <div class="overlay-right">
+       <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+  </div>
+  <div class="product-button text-center">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+  <h3>Fitness Watch</h3>
+  <h5>$40.00</h5>
+  </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <div class="product-top">
+      <img src="images\fit-watch3.jpg" alt="">
+      <div class="overlay-right">
+       <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+  </div>
+  <div class="product-button text-center">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+  <h3>Fitness Watch</h3>
+  <h5>$40.00</h5>
+  </div>
+  </div>
+
+
+  <div class="col-md-3">
+    <div class="product-top">
+      <img src="images\fit-watch4.jpg" alt="">
+      <div class="overlay-right">
+       <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+       <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+
+  </div>
+  <div class="product-button text-center">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star-half-o"></i>
+  <h3>AHSAN WATCH</h3>
+  <h5>$40.00</h5>
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+  <!--new producs -->
+<section class="new-producs">
+<div class="container">
+  <div class="title-box">
+  <h2>New arivles</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="product-top">
+        <img src="images\fit-watch.jpg" alt="">
+        <div class="overlay-right">
+         <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+         <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+         <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+ </div>
+ <div class="product-button text-center">
+   <i class="fa fa-star"></i>
+   <i class="fa fa-star"></i>
+   <i class="fa fa-star"></i>
+   <i class="fa fa-star"></i>
+   <i class="fa fa-star-half-o"></i>
+   <h3>Fitness Watch</h3>
+   <h5>$40.00</h5>
+ </div>
+ </div>
+
+
+ <div class="col-md-3">
+   <div class="product-top">
+     <img src="images\fit-watch2.jpg" alt="">
+     <div class="overlay-right">
+      <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+     </div>
+ </div>
+ <div class="product-button text-center">
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star-half-o"></i>
+ <h3>Fitness Watch</h3>
+ <h5>$40.00</h5>
+ </div>
+ </div>
+
+
+ <div class="col-md-3">
+   <div class="product-top">
+     <img src="images\fit-watch3.jpg" alt="">
+     <div class="overlay-right">
+      <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+     </div>
+ </div>
+ <div class="product-button text-center">
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star-half-o"></i>
+ <h3>Fitness Watch</h3>
+ <h5>$40.00</h5>
+ </div>
+ </div>
+
+
+
+ <div class="col-md-3">
+   <div class="product-top">
+     <img src="images\fit-watch4.jpg" alt="">
+     <div class="overlay-right">
+      <button type="button" class="btn btn-secondary" title="Quick-Shop"><i class="fa fa-eye"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to wishlist"><i class="fa fa-heart-o"></i></button>
+      <button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart"></i></button>
+     </div>
+ </div>
+ <div class="product-button text-center">
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star"></i>
+ <i class="fa fa-star-half-o"></i>
+ <h3>Fitness Watch</h3>
+ <h5>$40.00</h5>
+ </div>
+ </div>
+ </div>
+</div>
+</section>
+
+<!--web site future-->
+<section class="website-future">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-3 future-box">
+      <img src="images\port-large.png" alt="">
+      <div class="future-text">
+        <p><b>100% original products</b>are avilable at company</p>
+
+      </div>
+    </div>
+    <div class="col-md-3 future-box">
+      <img src="images\port-large2.png" alt="">
+      <div class="future-text">
+        <p><b>Return within 30 days</b>of receving your order</p>
+      </div>
+    </div>
+    <div class="col-md-3 future-box">
+      <img src="images\port-large3.png" alt="">
+      <div class="future-text">
+        <p><b>Get fre delivery for every-order</b>on more then price</p>
+      </div>
+    </div>
+    <div class="col-md-3 future-box">
+      <img src="images\port-large4.png" alt="">
+      <div class="future-text">
+        <p><b>pay online through multiple</b>(card payment/net banking)</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!--foote design-->
+<section class="footer">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3">
+              <h1>Usefull links</h1>
+              <p>privacy policy</p>
+              <p>terms of us</p>
+              <p>Return policy</p>
+              <p>Discount policy</p>
+      </div>
+
+      <div class="col-md-3">
+              <h1>Company</h1>
+              <p>About Us</p>
+              <p>Contact Us</p>
+              <p>Career</p>
+              <p>Affiliate</p>
+      </div>
+      <div class="col-md-3">
+              <h1>Follw Us</h1>
+              <p><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</p>
+              <p><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</p>
+              <p><i class="fa fa-linkedin" aria-hidden="true"></i>Linkedin</p>
+              <p><i class="fa fa-youtube-square" aria-hidden="true"></i>Youtube</p>
+      </div>
+
+
+      <div class="col-md-3">
+              <h1>Download App</h1>
+
+              <img src="images/apps.jpg" class="apps-img">
+      </div>
+    </div>
+    <hr>
+    <p><i class="fa fa-copyright">Made With <i class="fa fa-heart"></i>by Ahsan Habib 21-08-2020</i></p>
+  </div>
+</section>
+<script src="js\jquery-3.5.1.slim.min.js"></script>
+<script src="js\popper.min.js"></script>
+<script src="js\bootstrap.min.js"></script>
+</body>
+</html>
